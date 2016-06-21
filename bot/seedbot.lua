@@ -247,9 +247,9 @@ function create_config( )
 @...
 
 🙏Special thanks to
-AD_คʀოคภ_TB
-Amir_viper
-Dead
+Arman-Turbo [dev]
+Amir_viper [dev]
+Dead [designer]
 
 📝 Please send your feedback
 The command /feedback [text]
