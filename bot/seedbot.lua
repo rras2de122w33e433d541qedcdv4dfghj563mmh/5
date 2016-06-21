@@ -234,20 +234,26 @@ function create_config( )
     },
     sudo_users = {132472033,120518968},
     moderation = {data = 'data/moderation.json'},
-    about_text = [[Turbo Anti Spam Bot v4
+    about_text = [[Turbo Anti Spam BoT V4
+    
 👤SoduBOT
 @ArmanTurbo
-@@Xx_AE_xX
+@Xx_AE_xX
+
 📢 Channel : soon!
+
 👤Admins
 @...
 @...
+
 🙏Special thanks to
 AD_คʀოคภ_TB
 Amir_viper
-dead
+Dead
+
 📝 Please send your feedback
 The command /feedback [text]
+
 Checkout yeo.ir/TurboBoT
 ]],
     help_text_realm = [[
