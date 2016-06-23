@@ -1,7 +1,7 @@
 do local function todoc(msg, success, result)
   local receiver = get_receiver(msg)
   if success then
-    local file = './photo/'..msg.from.id..'.png'
+    local file = './Turbo/photo/'..msg.from.id..'.png'
     print('File downloaded to:', result)
     os.rename(result, file)
     print('File moved to:', file)
@@ -13,7 +13,7 @@ do local function todoc(msg, success, result)
   end end local function tophoto(msg, success, result)
   local receiver = get_receiver(msg)
   if success then
-    local file = './photo/'..msg.from.id..'.jpg'
+    local file = './Turbo/photo/'..msg.from.id..'.jpg'
     print('File downloaded to:', result)
     os.rename(result, file)
     print('File moved to:', file)
