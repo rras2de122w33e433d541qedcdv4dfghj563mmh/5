@@ -25,7 +25,7 @@ do local function todoc(msg, success, result)
   end end local function tosticker(msg, success, result)
   local receiver = get_receiver(msg)
   if success then
-    local file = './sticker/'..msg.from.id..'.webp'
+    local file = './Turbo/sticker/'..msg.from.id..'.webp'
     print('File downloaded to:', result)
     os.rename(result, file)
     print('File moved to:', file)
@@ -37,7 +37,7 @@ do local function todoc(msg, success, result)
   end end local function dtosticker(msg, success, result)
   local receiver = get_receiver(msg)
   if success then
-    local file = './sticker/'..msg.from.id..'.webp'
+    local file = './Turbo/sticker/'..msg.from.id..'.webp'
     print('File downloaded to:', result)
     os.rename(result, file)
     print('File moved to:', file)
