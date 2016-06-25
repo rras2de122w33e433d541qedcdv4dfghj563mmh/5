@@ -1,7 +1,6 @@
 do
 
-function run(msg, matches)
-  if matches[1] == '😐' and  not is_sudo(msg) then
+function run(msg, matches) and  not is_sudo(msg) then
   local poker = {'پوکر نگاییدم😐','پوکر نده جنده 😐😐','کیونی چرا پوکر میدی',
                   'کیرم تو پوکر😐','گاییدم😐',' نگاییدم😐',
                   'کیر خر پوکر نده😐',' نفر بعدی بوکر بده بن 😐','کیری پوک نده😐',
