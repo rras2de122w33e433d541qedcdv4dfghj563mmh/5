@@ -212,7 +212,7 @@ function create_config( )
   -- A simple config with basic plugins and ourselves as privileged user
   config = {
     enabled_plugins = {
-	"admin",
+    "admin",
     "onservice",
     "inrealm",
     "ingroup",
@@ -228,10 +228,24 @@ function create_config( )
     "invite",
     "all",
     "leave_ban",
-	"supergroup",
-	"whitelist",
-	"plugins",
-	"msg_checks"
+    "supergroup",
+    "whitelist",
+    "msg_checks",
+    "plugins",
+    "linkpv",
+    "lock_emoji",
+    "lock_english",
+    "lock_fosh",
+    "lock_fwd",
+    "lock_join",
+    "lock_media",
+    "lock_operator",
+    "lock_username",
+    "lock_tag",
+    "lock_reply",
+    "set_type",
+    "dlpm",
+    "setwlc"
     },
     sudo_users = {132472033,120518968},
     moderation = {data = 'data/moderation.json'},
@@ -251,6 +265,7 @@ function create_config( )
 Arman-Turbo [Developer] & [Manager] & [Founder]
 Amir-viper [Developer] & [designer]
 Dead [designer] & [Admin]
+Turbo ™
 
 📝 Please send your feedback
 The command /feedback [text]
@@ -472,7 +487,7 @@ will return group ban list
 	help_text_super =[[
 SuperGroup Commands:
 
-!info
+!gpinfo
 Displays general info about the SuperGroup
 
 !admins
@@ -494,6 +509,9 @@ Lists all users in SuperGroup
 Kicks a user from SuperGroup
 *Adds user to blocked list*
 
+!kick
+Kicks a user from SuperGroup
+*Adds user to blocked list*
 !ban
 Bans user from the SuperGroup
 
@@ -547,12 +565,14 @@ Retireives the group link
 !rules
 Retrieves the chat rules
 
-!lock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict]
+!lock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict|tag|username|fwd|reply|fosh|tgservice|leave|join|emoji|english|media|operator]
 Lock group settings
 *rtl: Delete msg if Right To Left Char. is in name*
 *strict: enable strict settings enforcement (violating user will be kicked)*
+*fosh: Delete badword msg*
+*fwd: Delete forward msg*
 
-!unlock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict]
+!unlock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict|tag|username|fwd|reply|fosh|tgservice|leave|join|emoji|english|media|operator]
 Unlock group settings
 *rtl: Delete msg if Right To Left Char. is in name*
 *strict: disable strict settings enforcement (violating user will not be kicked)*
@@ -568,24 +588,27 @@ Unmute group message types
 !setflood [value]
 Set [value] as flood sensitivity
 
+!type [name]
+set type for supergroup
+
 !settings
 Returns chat settings
 
-!muteslist
+!mutelist
 Returns mutes for chat
 
-!muteuser [username]
+!silent [username]
 Mute a user in chat
 *If a muted user posts a message, the message is deleted automaically
 *only owners can mute | mods and owners can unmute
 
-!mutelist
+!silentlist
 Returns list of muted users in chat
 
 !banlist
 Returns SuperGroup ban list
 
-!clean [rules|about|modlist|mutelist]
+!clean [rules|about|modlist|silentlist]
 
 !del
 Deletes a message by reply
