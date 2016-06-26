@@ -62,8 +62,6 @@ return {
 patterns = {
   "^[#/!]([Mm][Uu][Ss][Ii][Cc]) (.*)$",
   "^[#/!]([dD][Ll]) (.*)$"
-  "^([Mm][Uu][Ss][Ii][Cc]) (.*)$",
-  "^([dD][Ll]) (.*)$"
   }, 
   run = run 
 }
