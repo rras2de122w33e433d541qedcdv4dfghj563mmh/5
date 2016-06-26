@@ -16,7 +16,6 @@ end
 return {
    patterns = {
 "^[/#!](aparat) (.*)$",
-"^[Aa]parat (.*)$",
    },
    run = run
 }
