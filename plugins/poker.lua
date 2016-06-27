@@ -1,5 +1,4 @@
 do
-
 function run(msg, matches) and  not is_sudo(msg) then
   local poker = {'پوکر نگاییدم😐','پوکر نده جنده 😐😐','کیونی چرا پوکر میدی',
                   'کیرم تو پوکر😐','گاییدم😐',' نگاییدم😐',
