@@ -1,8 +1,8 @@
-local function get_msgs_user_chat(user_id, chat_id)
+local function get_msgs_user_channel(user_id, channel_id)
   local user_info = {}
   local uhash = 'user:'..user_id
   local user = redis:hgetall(uhash)
-  local um_hash = 'msgs:'..user_id..':'..chat_id
+  local um_hash = 'msgs:'..user_id..':'..channel_id
   user_info.msgs = tonumber(redis:get(um_hash) or 0)
   user_info.name = user_print_name(user)..' ['..user_id..']'
   return user_info
@@ -36,10 +36,10 @@ file:write(text)
 file:close()
 end
 local function run(msg,matches)
-if msg.to.type == 'chat' then
+if msg.to.type == 'channel' then
 send_document(get_receiver(msg),'./groups/members.htm',ok_cb,false)
 if is_momod(msg) then
-chat_info('chat#id'..msg.to.id,member_html,false)
+channel_info('channel#id'..msg.to.id,member_html,false)
 end
 end
 end
