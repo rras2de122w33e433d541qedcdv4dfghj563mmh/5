@@ -22,7 +22,7 @@ local space = '_____________________________'
 if not group_link then
 return ''
 end
-return ""..space.."\nTurbo Anti Spam BoT V5\n"..space.."\n    \n👤SoduBOT\n@ArmanTurbo\n@Xx_AE_xX\n\n📢 Channel : soon!\n\n"..admins.."\n@...\n\n🙏Special thanks to\nArman-Turbo [Developer] & [Manager] & [Founder]\nAmir-viper [Developer] & [designer]\nDead [designer] & [Admin]\nAnd All My Friends\n\nServer specifications :\nup Time :"..uptime.."\nMacintosh A9 Procesor:\nUbuntu 14.04\nCPU : 16 Core\nRAM : 32 GB\nHDD : 8 TB\nIPN : 7 MB/S\nPort : 2 MB/s\n"..space.."\nGithub :\n"..github.."\n"..space.."\nSupport link:\n"..group_link
+return "..space.."\nTurbo Anti Spam BoT V5\n"..space.."\n    \n👤SoduBOT\n@ArmanTurbo\n@Xx_AE_xX\n\n📢 Channel : soon!\n\n"..admins.."\n@...\n\n🙏Special thanks to\nArman-Turbo [Developer] & [Manager] & [Founder]\nAmir-viper [Developer] & [designer]\nDead [designer] & [Admin]\nAnd All My Friends\n\nServer specifications :\nup Time :"..uptime.."\nMacintosh A9 Procesor:\nUbuntu 14.04\nCPU : 16 Core\nRAM : 32 GB\nHDD : 8 TB\nIPN : 7 MB/S\nPort : 2 MB/s\n"..space.."\nGithub :\n"..github.."\n"..space.."\nSupport link:\n"..group_link
 end
 return {
 patterns = {
