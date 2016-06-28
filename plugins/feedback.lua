@@ -1,43 +1,28 @@
 do
 
-function run(msg, matches)
-
-local fuse = '#newfeedback \n\nID ▶️ : ' .. msg.from.id .. '\n\nGROUP ID ▶️ : '..msg.to.id..'\n\nName▶️ : ' .. msg.from.print_name ..'\n\nusername ▶️ :@'..(msg.from.username or 'ندارد')..'\n\nPhone number ▶️ :+'..(msg.from.phone or 'ندارد')..'\n\ :\n\n\n' .. matches[1] 
-local fuses = '!printf user#id' .. msg.from.id
-
-
-    local text = matches[1]
- bannedidone = string.find(msg.from.id, '123')
-        bannedidtwo =string.find(msg.from.id, '465')       
-   bannedidthree =string.find(msg.from.id, '678')  
+ function run(msg, matches)
+ local ch = 'channel#id'..msg.to.id
+ local fuse = '📌 #فیدبک جدید\n\n👤 نام کاربر : ' .. msg.from.print_name .. '\n\n👤 نام کاربری : @' .. msg.from.username ..'\n\n number phone ' ..msg.from.phone.. '\n\n👤 کد کاربر : ' .. msg.from.id ..'\n\n👤 کد گروه : '..msg.to.id.. '\n\n📝 متن پیام :\n\n' .. matches[1]
+ local fuses = '!printf user#id' .. msg.from.id
 
 
-        print(msg.to.id)
+   local text = matches[1]
+   local chat = "channel#id"..1045086781
 
-        if bannedidone or bannedidtwo or bannedidthree then                   
-                return 'You are banned to send a feedback'
- else
+  local sends = send_msg(chat, fuse, ok_cb, false)
+  return '✅ Message successfully sent'
 
+ end
+ end
+ return {
 
-                 local sends0 = send_msg('channel#1045086781', fuse, ok_cb, false)
-
- return 'پیام شما با موفقیت برای ما ارسال شد!'
-
-     
-
-end
-
-end
-return {
   description = "Feedback",
 
-  usage = "feedback : ارسال پیام به ادمین های ربات",
+  usage = "feedback: Send A Message To Admins.",
   patterns = {
-   "^[!/][Ff]eedback (.*)$",
-   "^[Ff]eedback (.*)$"
-
+  "^[!/][Ff]eedback (.*)$",
+  "^[Ff]eedback (.*)$"
+  
   },
   run = run
-}
-
-end
+ }
