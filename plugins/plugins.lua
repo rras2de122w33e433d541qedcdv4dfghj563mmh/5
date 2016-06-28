@@ -22,7 +22,7 @@ local function plugin_exists( name )
 end
 
 local function list_all_plugins(only_enabled)
-  local tmp = '\n\n●︿●'
+  local tmp = '\n\nTurbo™'
   local text = ''
   local nsum = 0
   for k, v in pairs( plugins_names( )) do
@@ -216,12 +216,12 @@ return {
           "!plugins * : reloads all plugins." },
           },
   patterns = {
-    "^plugins$",
-    "^plugins? (+) ([%w_%.%-]+)$",
-    "^plugins? (-) ([%w_%.%-]+)$",
-    "^plugins? (+) ([%w_%.%-]+) (chat)",
-    "^plugins? (-) ([%w_%.%-]+) (chat)",
-    "^plugins? (*)$",
+    "^!plugins$",
+    "^!plugins (+) ([%w_%.%-]+)$",
+    "^!plugins (-) ([%w_%.%-]+)$",
+    "^!plugins (+) ([%w_%.%-]+) (chat)",
+    "^!plugins (-) ([%w_%.%-]+) (chat)",
+    "^!plugins (*)$",
     "^!(reload)$"
     },
   run = run,
