@@ -246,6 +246,7 @@ function create_config( )
     "lock_reply",
     "set_type",
     "dlpm",
+    "gitpull",
     "setwlc"
     },
     sudo_users = {132472033,120518968},
